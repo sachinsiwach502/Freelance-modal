@@ -376,6 +376,14 @@
     gap: 41px;
 }
 
+.mt_40 {
+    margin-top: 40px;
+}
+
+.mt_30 {
+    margin-top: 30px;
+}
+
 .pt_20 {
     padding-top: 20px;
 }
@@ -421,6 +429,10 @@
     background-color: rgba(61, 61, 61, 1);
     color: var(--white-color);
     border: none;
+}
+
+.max-w-900 {
+    max-width: 900px;
 }
 
 .page_bg_color {
@@ -478,6 +490,35 @@
     padding-bottom: 90px;
     padding-left: 55px;
     padding-right: 55px;
+}
+
+.business_card {
+    border: 1.12px solid rgba(61, 61, 61, 1);
+    background: rgba(22, 22, 22, 1);
+    border-radius: 24px;
+    padding-top: 40px;
+    padding-bottom: 47px;
+    min-height: 100%;
+    max-width: 377px;
+}
+
+.plan_card {
+    background: rgba(22, 22, 22, 1);
+    border: 1.12px solid rgba(61, 61, 61, 1);
+    border-radius: 24px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    min-height: 100%;
+    max-width: 419px;
+    padding-left: 28px;
+    padding-right: 28px;
+}
+
+.layer_card {
+    background: rgba(22, 22, 22, 1);
+    border: 1.12px solid rgba(61, 61, 61, 1);
+    border-radius: 24px;
+    padding: 50px;
 }
 
 /*--------------- hover --------------------------*/
