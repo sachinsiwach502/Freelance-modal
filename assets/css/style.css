@@ -30,12 +30,11 @@
 
 
     --primary-color: #0C1218;
+    --secondary-color: #97C4FF;
     --black-color: #000000;
     --white-color: #ffff;
-    --tools-bg-color: #F9F9F9;
-    --blue-color: #0000EE;
-    --theme-bg-color: #FAF9F9;
     --nav-underline: rgba(0, 0, 0, 1);
+    --light-brown: #606060;
 
     --fs-10: 10px;
     --fs-14: 14px;
@@ -110,6 +109,10 @@
 
 .black {
     color: var(--black-color);
+}
+
+.sec_color {
+    color: var(--secondary-color);
 }
 
 .ff-hl {
@@ -380,6 +383,10 @@
     gap: 30px;
 }
 
+.gap-20 {
+    gap: 20px;
+}
+
 .mt_40 {
     margin-top: 40px;
 }
@@ -518,6 +525,14 @@
     padding-right: 28px;
 }
 
+.max-w-64 {
+    max-width: 64px;
+}
+
+.min-h-64 {
+    min-height: 64px;
+}
+
 .layer_card {
     background: rgba(22, 22, 22, 1);
     border: 1.12px solid rgba(61, 61, 61, 1);
@@ -538,6 +553,66 @@
     padding-left: 20px;
     border-radius: 24px;
     max-width: 420px;
+    min-height: 100%;
+}
+
+.knows_sec {
+    padding: 44px;
+    background: rgba(22, 22, 22, 1);
+    border: 1.12px solid rgba(61, 61, 61, 1);
+    border-radius: 24px;
+}
+
+.konws_inside_card {
+    background: rgba(22, 22, 22, 1);
+    border: 1.12px solid rgba(61, 61, 61, 1);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 26px;
+    padding-right: 26px;
+    border-radius: 24px;
+    max-width: 385px;
+    min-height: 100%;
+}
+
+.book_call_card {
+    background: rgba(22, 22, 22, 1);
+    border: 1.12px solid rgba(61, 61, 61, 1);
+    border-radius: 24px;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-top: 24px;
+    padding-bottom: 60px;
+    min-height: 100%;
+}
+
+.xl-min-h-33 {
+    min-height: 33px;
+}
+
+.xl-max-w-33 {
+    max-width: 33px;
+}
+
+
+
+
+.mins {
+    min-width: 52px;
+    max-height: 52px;
+    border-radius: 50%;
+    background-color: var(--light-brown);
+    display: none;
+}
+
+.accordian_text {
+    display: none;
+}
+
+.accord_itm {
+    background: #161616;
+    border: 1.12px solid #3D3D3D;
+    border-radius: 24px;
 }
 
 /*--------------- hover --------------------------*/
@@ -602,5 +677,69 @@
 
     .menuIcon:hover span {
         background-color: var(--primary-color);
+    }
+}
+
+@media (max-width:1200px) {
+    .gap-xl-20 {
+        gap: 20px;
+    }
+
+    .xl-fs-24 {
+        font-size: var(--fs-24);
+    }
+
+    .xl-lh-27 {
+        line-height: var(--lh-27);
+    }
+
+    .xl-max-w-44 {
+        max-width: 44px;
+    }
+
+    .xl-min-h-44 {
+        min-height: 44px;
+    }
+}
+
+@media (max-width:768px) {
+    .md-fs-18 {
+        font-size: var(--fs-18);
+    }
+
+    .md-lh-20 {
+        line-height: var(--lh-20);
+    }
+
+    .md_gap_8 {
+        gap: 8px;
+    }
+
+    .md-min-h-30 {
+        min-height: 30px;
+    }
+
+    .md-max-w-30 {
+        max-width: 30px;
+    }
+}
+
+@media (min-width:1200px) {
+    .xl-max-w-218 {
+        max-width: 218px;
+    }
+
+    .xl-min-h-218 {
+        min-height: 218px;
+    }
+}
+
+@media (min-width:768px) {
+    .md-min-h-155 {
+        min-height: 155px;
+    }
+
+    .md-max-w-155 {
+        max-width: 155px;
     }
 }

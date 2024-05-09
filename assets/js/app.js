@@ -38,6 +38,41 @@ menuIcon.addEventListener("click", () => {
         body.style.overflow = "auto";
     }
 });
+
+
+// accordina---------------------------------
+let accordian = document.querySelectorAll(".accord_itm");
+
+accordian.forEach(Element => {
+    let plusimg = Element.querySelector(".plus");
+    let minsimg = Element.querySelector(".mins");
+    let clickable_accord = Element.querySelector(".accordian-head");
+    let hidden_txt = Element.querySelector(".accordian_text");
+    clickable_accord.addEventListener("click", () => {
+        accordian.forEach(otherelement => {
+            if (otherelement !== Element) {
+                let plusimg = otherelement.querySelector(".plus");
+                let minsimg = otherelement.querySelector(".mins");
+                let hidden_txt = otherelement.querySelector(".accordian_text");
+                hidden_txt.style.display = "none";
+                minsimg.style.display = "none";
+                plusimg.style.display = "flex"
+            }
+
+        });
+        let txt_style = window.getComputedStyle(hidden_txt).display;
+        if (txt_style === "none") {
+            hidden_txt.style.display = "flex";
+            plusimg.style.display = "none";
+            minsimg.style.display = "flex";
+        } else {
+            hidden_txt.style.display = "none";
+            plusimg.style.display = "flex";
+            minsimg.style.display = "none";
+        }
+    });
+});
+
 // first lick slider----------------
 $('.slider').slick({
     dots: true,
@@ -87,36 +122,6 @@ $('.slider').slick({
     ]
 });
 
-// accordina--------------------------
-let accordian = document.querySelectorAll(".accror_itm");
-document.querySelector('.accrdian-img').style.transform = "rotate(180deg)";
-document.querySelector('.hidden-text').style.display = "block";
-
-accordian.forEach(Element => {
-    let img = Element.querySelector(".accrdian-img");
-    let clickable_accord = Element.querySelector(".accordian-head");
-    let hidden_txt = Element.querySelector(".hidden-text");
-    clickable_accord.addEventListener("click", () => {
-        accordian.forEach(otherelement => {
-            if (otherelement !== Element) {
-                let img = otherelement.querySelector(".accrdian-img");
-                let hidden_txt = otherelement.querySelector(".hidden-text");
-                img.style.transform = "rotate(0deg)";
-                hidden_txt.style.display = "none";
-            }
-
-        })
-        let txt_style = window.getComputedStyle(hidden_txt).display;
-        if (txt_style === "none") {
-            hidden_txt.style.display = "block";
-            img.style.transform = "rotate(180deg)";
-        } else {
-            hidden_txt.style.display = "none";
-            img.style.transform = "rotate(0deg)";
-        }
-    })
-
-});
 
 // navlinks hidden show class----------
 
