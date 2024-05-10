@@ -85,6 +85,7 @@ $('.slick_slider').slick({
     slidesToScroll: 1,
     prevArrow: false,
     nextArrow: false,
+
     responsive: [
         {
             breakpoint: 992,
@@ -137,6 +138,8 @@ $('.poster_slider').slick({
     prevArrow: false,
     nextArrow: false,
     slidesToScroll: 1,
+    // centerMode: true,
+    // centerPadding: "20%",
     responsive: [
         {
             breakpoint: 1024,
@@ -162,7 +165,6 @@ $('.poster_slider').slick({
 
 
 // navlinks hidden show class----------
-
 let navLinks = document.querySelectorAll(".nav_links")
 
 navLinks.forEach(links => {
@@ -172,6 +174,8 @@ navLinks.forEach(links => {
         body.style.overflow = "auto";
     });
 });
+
+
 // preloader---------------------
 let preloader = document.querySelector(".preloader");
 preloader.classList.add("d-flex");
@@ -198,6 +202,5 @@ scroll_top.addEventListener("click", () => {
     })
 });
 
-// aos Animation 
-AOS.init();
+
 
