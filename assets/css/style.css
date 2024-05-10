@@ -897,5 +897,9 @@
     .seePlans {
         padding: 20px 70px 20px 70px;
     }
+    .xxl-fs-28{
+        font-size: var(--fs-28);
+
+    }
 
 }
