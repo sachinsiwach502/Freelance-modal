@@ -138,8 +138,6 @@ $('.poster_slider').slick({
     prevArrow: false,
     nextArrow: false,
     slidesToScroll: 1,
-    // centerMode: true,
-    // centerPadding: "20%",
     responsive: [
         {
             breakpoint: 1024,
@@ -176,12 +174,6 @@ navLinks.forEach(links => {
 });
 
 
-// preloader---------------------
-let preloader = document.querySelector(".preloader");
-preloader.classList.add("d-flex");
-setTimeout(() => {
-    preloader.classList.add("d-none");
-}, 3000);
 
 // scroll to top-----------------
 
@@ -204,3 +196,10 @@ scroll_top.addEventListener("click", () => {
 
 
 
+
+// preloader---------------------
+let preloader = document.querySelector(".preloader");
+preloader.classList.add("d-flex");
+setTimeout(() => {
+    preloader.classList.add("d-none");
+}, 3000);
