@@ -54,6 +54,7 @@
     --fs-48: 48px;
     --fs-50: 50px;
     --fs-52: 52px;
+    --fs-55: 55px;
     --fs-60: 60px;
     --fs-61: 61px;
     --fs-64: 64px;
@@ -86,6 +87,7 @@
     --lh-54: 54px;
     --lh-56: 56px;
     --lh-61: 61px;
+    --lh-64: 64px;
     --lh-68: 68px;
     --lh-72: 72px;
     --lh-75: 75px;
@@ -475,13 +477,11 @@
 }
 
 .seePlans {
-    border-radius: 16px;
     background: linear-gradient(90deg, #017EFF 0%, #97C4FF 100%);
-    padding-left: 70px;
-    padding-right: 70px;
-    padding-top: 20px;
-    padding-bottom: 20px;
     border: none;
+    padding: 16px 50px 16px 50px;
+    border-radius: 12px;
+
 }
 
 .box {
@@ -495,7 +495,7 @@
 }
 
 .star_card {
-    border-radius: 50px;
+    border-radius: 16px;
     background: linear-gradient(90deg, #017EFF 0%, #97C4FF 100%);
     padding-top: 90px;
     padding-bottom: 90px;
@@ -586,6 +586,10 @@
     min-height: 100%;
 }
 
+.slick-slide {
+    width: 320px !important;
+}
+
 .xl-min-h-33 {
     min-height: 33px;
 }
@@ -594,8 +598,24 @@
     max-width: 33px;
 }
 
+.all_plans_card {
+    background: #161616;
+    border: 1.12px solid #3D3D3D;
+    border-radius: 24px;
+    padding-top: 25px;
+    padding-left: 14px;
+    padding-right: 23px;
+    padding-bottom: 42px;
+    min-height: 100%;
+}
 
+.max-w-966 {
+    max-width: 966px;
+}
 
+.max-w-264 {
+    max-width: 264px;
+}
 
 .mins {
     min-width: 52px;
@@ -662,6 +682,7 @@
         flex-direction: column;
         justify-content: space-between;
         z-index: 31;
+
     }
 
     .menuIcon span {
@@ -722,6 +743,25 @@
     .md-max-w-30 {
         max-width: 30px;
     }
+
+    .md-max-w-128 {
+        max-width: 128px;
+    }
+
+    .md-min-h-128 {
+        min-height: 128px;
+    }
+}
+
+
+@media (min-width:768px) {
+    .md-min-h-155 {
+        min-height: 155px;
+    }
+
+    .md-max-w-155 {
+        max-width: 155px;
+    }
 }
 
 @media (min-width:1200px) {
@@ -732,14 +772,130 @@
     .xl-min-h-218 {
         min-height: 218px;
     }
+
+    .xl-fs-55 {
+        font-size: var(--fs-55);
+    }
+
+    .xl-lh-64 {
+        line-height: var(--lh-64);
+    }
+
+    .xl-fs-28 {
+        font-size: var(--fs-28);
+    }
+
+    .xl-lh-23 {
+        line-height: var(--lh-23);
+    }
+
+    .xl-fs-20 {
+        font-size: var(--fs-20);
+    }
+
+    .xl-lh-37 {
+        line-height: var(--lh-37);
+    }
+
+    .xl-fs-40 {
+        font-size: var(--fs-40);
+    }
+
+    .xl-fs-16 {
+        font-style: var(--fs-16);
+    }
+
+    .xl-lh-27 {
+        line-height: var(--lh-27);
+    }
+
+    .xl-lh-45 {
+        line-height: var(--lh-45);
+    }
+
+    .xl-lh-61 {
+        line-height: var(--lh-61);
+    }
+
+    .xl-lh-49 {
+        line-height: var(--lh-49);
+    }
+
+    .star_card {
+        border-radius: 20px;
+    }
+
+    .xl-fs-45 {
+        font-size: var(--fs-44);
+    }
+
+    .xl-lh-55 {
+        line-height: var(--lh-45);
+    }
+
+
+
 }
 
-@media (min-width:768px) {
-    .md-min-h-155 {
-        min-height: 155px;
+@media (min-width:1400px) {
+    .xxl-fs-24 {
+        font-size: var(--fs-24);
     }
 
-    .md-max-w-155 {
-        max-width: 155px;
+    .star_card {
+        border-radius: 50px;
     }
+
+    .xxl-fs-28 {
+        font-size: var(--fs-28);
+    }
+
+    .xxl-lh-37 {
+        line-height: var(--lh-37);
+    }
+
+    .xxl-lh-27 {
+        line-height: var(--lh-27);
+    }
+
+    .xxl-lh-32 {
+        line-height: var(--lh-32);
+    }
+
+    .xxl-lh-90 {
+        line-height: var(--lh-90);
+    }
+
+    .xxl-fs-70 {
+        font-size: var(--fs-70);
+    }
+
+    .xxl-fs-40 {
+        font-size: var(--fs-40);
+    }
+
+    .xxl-lh-45 {
+        line-height: var(--lh-45);
+    }
+
+    .xxl-fs-64 {
+        font-size: var(--fs-64);
+    }
+
+    .xxl-lh-72 {
+        line-height: var(--lh-72);
+    }
+
+    .xxl-lh-83 {
+        line-height: var(--lh-83);
+    }
+
+    .xxl-lh-61 {
+        line-height: var(--lh-61);
+    }
+
+    .seePlans {
+        padding: 20px 70px 20px 70px;
+    }
+
 }
