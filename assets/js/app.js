@@ -1,3 +1,4 @@
+// nav bar----------------
 let body = document.body;
 let menuIcon = document.querySelector(".menuIcon");
 let menuList = document.querySelector(".menuBar");
@@ -15,15 +16,16 @@ function cross() {
     line_3.classList.add("position-relative");
     line_3.style.top = "-12px";
     line_3.style.transform = "rotate(-45deg)";
-    line_1.classList.add("transition")
-    line_3.classList.add("transition")
+    line_1.classList.add("transition");
+    line_3.classList.add("transition");
+
 }
 function line() {
     line_2.classList.remove("d-none");
     line_1.classList.remove("position-relative");
     line_1.style.transform = "rotate(0deg)"
     line_3.classList.remove("position-relative");
-    line_3.style.transform = "rotate(0deg)"
+    line_3.style.transform = "rotate(0deg)";
 }
 
 

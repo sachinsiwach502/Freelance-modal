@@ -673,6 +673,17 @@
     background: var(--light-brown);
 }
 
+.slick-slider {
+    margin: 0 -15px;
+}
+
+.slick-slide {
+    padding: 10px;  
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
 /*--------------- after befor ----------------------*/
 
 .nav_links::before {
@@ -697,7 +708,7 @@
         position: fixed;
         top: 0;
         left: -100%;
-        background: var(--white-color);
+        background: var(--black-color);
         z-index: 30;
         transition: all 300ms linear;
     }
@@ -726,10 +737,6 @@
 
     .show {
         left: 0;
-    }
-
-    .menuIcon:hover span {
-        background-color: var(--primary-color);
     }
 }
 
