@@ -439,10 +439,13 @@
     padding-bottom: 20px;
     padding-left: 70px;
     padding-right: 70px;
-    background-color: rgba(61, 61, 61, 1);
+    background: rgba(61, 61, 61, 1);
     color: var(--white-color);
     border: none;
+    transition: all 200ms linear;
 }
+
+
 
 .max-w-900 {
     max-width: 900px;
@@ -481,8 +484,10 @@
     border: none;
     padding: 16px 50px 16px 50px;
     border-radius: 12px;
-
+    transition: all 300ms linear;
 }
+
+
 
 .box {
     border: 1.12px solid rgba(61, 61, 61, 1);
@@ -523,6 +528,25 @@
     max-width: 419px;
     padding-left: 28px;
     padding-right: 28px;
+}
+
+.slick-dots li button {
+    display: none !important;
+}
+
+.slick-dots li {
+    width: 20px;
+    height: 10px;
+    border-radius: 1000px;
+    background-color: #0B243D;
+
+}
+
+.slick-dots li.slick-active {
+    width: 35px;
+    height: 10px;
+    border-radius: 1000px;
+    background-color: #017EFF;
 }
 
 .max-w-64 {
@@ -586,7 +610,7 @@
     min-height: 100%;
 }
 
-.slick-slide {
+.slick_slider {
     width: 320px !important;
 }
 
@@ -639,6 +663,14 @@
 .nav_links:hover::before {
     width: 100%;
     transition: all 300ms linear;
+}
+
+.bttn:hover {
+    background: linear-gradient(90deg, #017EFF 0%, #97C4FF 100%);
+}
+
+.seePlans:hover {
+    background: var(--light-brown);
 }
 
 /*--------------- after befor ----------------------*/
@@ -854,6 +886,10 @@
         line-height: var(--lh-37);
     }
 
+    .xxl-lh-75 {
+        line-height: var(--lh-75);
+    }
+
     .xxl-lh-27 {
         line-height: var(--lh-27);
     }
@@ -897,9 +933,16 @@
     .seePlans {
         padding: 20px 70px 20px 70px;
     }
-    .xxl-fs-28{
+
+    .xxl-fs-28 {
         font-size: var(--fs-28);
 
     }
 
+}
+
+@media (min-width:567px) {
+    .slick_slider {
+        max-width: 700px !important;
+    }
 }
