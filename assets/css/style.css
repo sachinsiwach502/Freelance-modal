@@ -834,6 +834,57 @@
     z-index: 100;
 }
 
+/*--------------------- ellipse ------------------------*/
+.how_it_works_ellips {
+    position: absolute;
+    top: -50%;
+    right: 0;
+}
+
+.small_bussiness_ellips {
+    position: absolute;
+    bottom: -60%;
+    left: 0;
+}
+
+.plan_benefits_ellips {
+    position: absolute;
+    top: -5%;
+    right: 0;
+    height: 1012px;
+    width: 1012px;
+}
+
+.social_post_ellips {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    height: 1012px;
+    width: 1012px;
+}
+
+.knows_best_ellpis {
+    position: absolute;
+    top: -50%;
+    right: 20%;
+    height: 1012px;
+    width: 1012px;
+}
+
+.faq_ellips {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    height: 1012px;
+    width: 1012px;
+}
+
+.footer_ellips {
+    position: absolute;
+    left: 19%;
+    bottom: 0;
+}
+
 /*--------------- hover --------------------------*/
 .nav_links:hover::before {
     width: 100%;
