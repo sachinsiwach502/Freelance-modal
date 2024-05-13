@@ -1195,3 +1195,9 @@
         max-width: 700px !important;
     }
 }
+
+@media (max-width:576px) {
+    .ads-card {
+        max-width: 576px;
+    }
+}
