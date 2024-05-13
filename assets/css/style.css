@@ -36,7 +36,14 @@
     --white-color: #ffff;
     --nav-underline: rgba(0, 0, 0, 1);
     --light-brown: #606060;
-
+    --slick-dots-color: #0B243D;
+    --slick-active-color: #017EFF;
+    --border-color: rgba(61, 61, 61, 1);
+    --sec-bg-color: rgba(22, 22, 22, 1);
+    --text-gradient: linear-gradient(90deg, #017EFF 0%, #97C4FF 100%);
+    --acc-bg-color:#161616;
+    --acc-border-color:#3D3D3D;
+    
     --fs-10: 10px;
     --fs-14: 14px;
     --fs-15: 15px;
@@ -574,7 +581,7 @@
     padding-bottom: 20px;
     padding-left: 70px;
     padding-right: 70px;
-    background: rgba(61, 61, 61, 1);
+    background: var(--border-color);
     color: var(--white-color);
     border: none;
     transition: all 200ms linear;
@@ -599,7 +606,7 @@
 }
 
 .nav_border {
-    border: 1px solid rgba(61, 61, 61, 1);
+    border: 1px solid var(--border-color);
     border-radius: 16px;
 }
 
@@ -609,13 +616,13 @@
 }
 
 .heading-liner-gradint {
-    background: linear-gradient(90deg, #017EFF 0%, #97C4FF 100%);
+    background: var(--text-gradient);
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
 }
 
 .seePlans {
-    background: linear-gradient(90deg, #017EFF 0%, #97C4FF 100%);
+    background: var(--text-gradient);
     border: none;
     padding: 16px 50px 16px 50px;
     border-radius: 12px;
@@ -625,7 +632,7 @@
 
 
 .box {
-    border: 1.12px solid rgba(61, 61, 61, 1);
+    border: 1.12px solid var(--border-color);
     border-radius: 24px;
     min-height: 100%;
     padding-left: 28px;
@@ -636,7 +643,7 @@
 
 .star_card {
     border-radius: 16px;
-    background: linear-gradient(90deg, #017EFF 0%, #97C4FF 100%);
+    background: var(--text-gradient);
     padding-top: 90px;
     padding-bottom: 90px;
     padding-left: 55px;
@@ -644,8 +651,8 @@
 }
 
 .business_card {
-    border: 1.12px solid rgba(61, 61, 61, 1);
-    background: rgba(22, 22, 22, 1);
+    border: 1.12px solid var(--border-color);
+    background: var(--sec-bg-color);
     border-radius: 24px;
     min-height: 100%;
     max-width: 377px;
@@ -653,8 +660,8 @@
 }
 
 .plan_card {
-    background: rgba(22, 22, 22, 1);
-    border: 1.12px solid rgba(61, 61, 61, 1);
+    background: var(--sec-bg-color);
+    border: 1.12px solid var(--border-color);
     border-radius: 24px;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -672,7 +679,7 @@
     width: 20px;
     height: 10px;
     border-radius: 1000px;
-    background-color: #0B243D;
+    background-color: var(--slick-dots-color);
 
 }
 
@@ -680,7 +687,7 @@
     width: 35px;
     height: 10px;
     border-radius: 1000px;
-    background-color: #017EFF;
+    background-color: var(--slick-active-color);
 }
 
 .max-w-64 {
@@ -692,8 +699,8 @@
 }
 
 .layer_card {
-    background: rgba(22, 22, 22, 1);
-    border: 1.12px solid rgba(61, 61, 61, 1);
+    background: var(--sec-bg-color);
+    border: 1.12px solid var(--border-color);
     border-radius: 24px;
     padding: 50px;
 }
@@ -703,8 +710,8 @@
 }
 
 .ads-card {
-    background: rgba(22, 22, 22, 1);
-    border: 1.12px solid rgba(61, 61, 61, 1);
+    background: var(--sec-bg-color);
+    border: 1.12px solid var(--border-color);
     padding-top: 30px;
     padding-bottom: 30px;
     padding-right: 20px;
@@ -716,14 +723,14 @@
 
 .knows_sec {
     padding: 44px;
-    background: rgba(22, 22, 22, 1);
-    border: 1.12px solid rgba(61, 61, 61, 1);
+    background: var(--sec-bg-color);
+    border: 1.12px solid var(--border-color);
     border-radius: 24px;
 }
 
 .konws_inside_card {
-    background: rgba(22, 22, 22, 1);
-    border: 1.12px solid rgba(61, 61, 61, 1);
+    background: var(--sec-bg-color);
+    border: 1.12px solid var(--border-color);
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 26px;
@@ -734,8 +741,8 @@
 }
 
 .book_call_card {
-    background: rgba(22, 22, 22, 1);
-    border: 1.12px solid rgba(61, 61, 61, 1);
+    background: var(--sec-bg-color);
+    border: 1.12px solid var(--border-color);
     border-radius: 24px;
     padding-left: 23px;
     padding-right: 23px;
@@ -758,8 +765,8 @@
 }
 
 .all_plans_card {
-    background: #161616;
-    border: 1.12px solid #3D3D3D;
+    background: var(--acc-bg-color);
+    border: 1.12px solid var(--acc-border-color);
     border-radius: 24px;
     padding-top: 25px;
     padding-left: 14px;
@@ -789,8 +796,8 @@
 }
 
 .accord_itm {
-    background: #161616;
-    border: 1.12px solid #3D3D3D;
+    background: var(--acc-bg-color);
+    border: 1.12px solid var(--acc-border-color);
     border-radius: 24px;
 }
 
@@ -830,7 +837,6 @@
     height: 105%;
     top: 0;
     right: 0;
-    /* background: var(--img-bg-color); */
     background-color: var(--black-color);
     z-index: 100;
 }
@@ -893,7 +899,7 @@
 }
 
 .bttn:hover {
-    background: linear-gradient(90deg, #017EFF 0%, #97C4FF 100%);
+    background: var(--text-gradient);
 }
 
 .seePlans:hover {
@@ -913,7 +919,7 @@
     bottom: 0;
     width: 0;
     height: 2px;
-    background: linear-gradient(90deg, #017EFF 0%, #97C4FF 100%);
+    background: var(--text-gradient);
     transform: translateX(-50%);
 }
 
